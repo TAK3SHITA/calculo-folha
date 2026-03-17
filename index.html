@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo Folha Pagamento</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="formulario">
+        <h1>Sistema de calculo de Salario</h1>
+        <form id="formINSS" onsubmit="processaCalculo(event)">
+
+            <label for="salarioBruto">Salario Bruto</label>
+            <input type="number" id="salarioBruto" step="0.1" min="0" placeholder="EX: 1650.00" title="Informe seu salario bruto" required>
+
+            <label for="inss">INSS</label>
+            <input type="number" id="inss" min="0" disabled placeholder="Calculo Automatico">
+
+            <label for="irrf">IRRF</label>
+            <input type="number" id="irrf" min="0" disabled placeholder="Calculo Automatico">
+            
+            <button type="submit">Calcular o resultado</button>
+            <button type="reset" class="limpar">Limpar</button>
+
+            <label for="liquido">liquido</label>
+            <input type="number" id="liquido" min="0" disabled placeholder="Calculo Automatico">
+        </form>
+    </div>
+
+    <div id="resultado">
+    </div>
+
+    <!--JS-->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
