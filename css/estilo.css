@@ -13,18 +13,21 @@ h1{
     display: block;
 }
 
-label{
+label {
     display: block;
-    margin-top: 8px;
+    font-size: 13px;
     font-weight: bold;
-    font-size: 16px;
+    margin-top: 16px;   /* Distância do topo  */
+    color: #000000;
 }
-input{
+input {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-top: 4px;
-    border: 1px solid #000000;
-    border-radius: 8px;
+    border: 1px solid #90caf9;
+    border-radius: 6px;
+    box-sizing: border-box; /* Evita que o padding 'estoure' a div */
+    font-size: 15px;
 }
 
 button{

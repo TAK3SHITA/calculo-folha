@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-    
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <div class="formulario">
@@ -18,13 +19,13 @@
         <form id="formINSS" onsubmit="processaCalculo(event)">
 
             <label for="salarioBruto">Salario Bruto</label>
-            <input type="number" id="salarioBruto" step="0.1" min="0" placeholder="EX: 1650.00" title="Informe seu salario bruto" required>
+            <input type="number" id="salarioBruto" step="0.1" placeholder="EX: 1650.00" title="Informe seu salario bruto" required>
 
             <label for="inss">INSS</label>
-            <input type="number" id="inss" min="0" disabled placeholder="Calculo Automatico">
+            <input type="text" id="inssCalc" min="0" disabled placeholder="R$ 00.00">
 
             <label for="irrf">IRRF</label>
-            <input type="number" id="irrf" min="0" disabled placeholder="Calculo Automatico">
+            <input type="text" id="irrfCalc" min="0" disabled placeholder="R$ 00.00">
             
             <button type="submit">Calcular o resultado</button>
             <button type="reset" class="limpar">Limpar</button>
